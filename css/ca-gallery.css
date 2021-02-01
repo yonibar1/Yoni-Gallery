@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-top:20px;
 }
 p {
     line-height: 1.75;
@@ -84,7 +85,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: red;
+    background-color: white;
     width: 80vw;
     right: -80vw;
     z-index: 10;

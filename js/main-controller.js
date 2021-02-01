@@ -2,9 +2,13 @@
 
 
 function init() {
+    $('.btn-input').click(getContact)
     renderProjects()
     renderModals()
+
 }
+
+$(document).ready(init)
 
 
 
@@ -30,6 +34,14 @@ function renderProjects() {
 }
 
 
+function getContact() {
+    var elSubj = $('.subject-input').val()
+    var elMail = $('.email-input').val()
+    var elMsg = $('.message-input').val()
+
+    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=yonibar1999@gmail.com.com&su=${elSubj}&body=${elMsg}`;
+
+}
 
 function renderModals() {
     var projects = getProjs()
